@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <h3>Para acceder a la tienda por favor autentícate:</h3>
+    
+    <div><br><br>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Ingresar:</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Usuario/User</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="corre-e. / e-mail" class="form-control input-md" required="">
+  </div><br>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordinput">Clave/Password</label>
+  <div class="col-md-4">
+    <input id="passwordinput" name="passwordinput" type="password" placeholder="Clave/Passwordr" class="form-control input-md" required="">
+  </div><br>
+</div>
+<!-- Button (Double) -->
+<div class="form-group">
+  <!-- <label class="col-md-4 control-label" for="button1id">Double Button</label> -->
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" >Acceder</button>
+    <button id="button2id" name="button2id" >Registrarse</button>
+    <button id="button3id" name="button3id" >Recuperar Usuario/Clave/Password</button>
+  </div>
+</div>
+</fieldset>
+</form>
+</div>
+</body>
+
+<footer>
+  <%- include('partials/footer'); %>
+</footer>
+
+</html>

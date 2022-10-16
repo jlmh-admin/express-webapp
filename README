@@ -1,0 +1,51 @@
+This is an attempt to use express without any template view. I could start wit a template
+just to laydown the folders structur but then I will use plain html and java script without 
+view framework (Not really totally possible as of my actual understanding). 
+
+This still uses some ejs so for better undertanding of this see ../ejs-demo folder. 
+
+Let see how it goes.
+
+1.- npm init.
+2.- npx express-generator --view=ejs.
+3.- make change in the view engine from ejs to html.
+4.- change file extension from ejs to html.
+5.- TODO: AJAX checar como hacerlo
+6.- npm install html
+7.- npm install consolidate 
+8.- ahcer cambios en el puntos 3: 
+	https://stackoverflow.com/questions/16111386/error-cannot-find-module-html-when-visiting-html-page/16111469#16111469	
+	https://github.com/tj/consolidate.js
+	
+	var engines = require('consolidate');
+	app.set('views', __dirname + '/views');
+	app.engine('html', engines.mustache);
+	app.set('view engine', 'html');
+
+
+lmonhdz@acr-debian:~/MernStack/express/htmlvanilla$ npx express-generator --view=ejs
+destination is not empty, continue? [y/N] y
+
+   create : public/
+   create : public/javascripts/
+   create : public/images/
+   create : public/stylesheets/
+   create : public/stylesheets/style.css
+   create : routes/
+   create : routes/index.js
+   create : routes/users.js
+   create : views/
+   create : views/error.ejs
+   create : views/index.ejs
+   create : app.js
+   create : package.json
+   create : bin/
+   create : bin/www
+
+   install dependencies:
+     $ npm install
+
+   run the app:
+     $ DEBUG=htmlvanilla:* npm start
+
+JLMH

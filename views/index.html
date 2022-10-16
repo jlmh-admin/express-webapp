@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('partials/header'); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div><br><br>
+	<p>El siguiente es un link que llama a una pagina de esta aplicaciíon. 
+	    <a href="/pagina1">Pagina 1</a>
+	</p>
+	<p>El siguiente es el segundo link que llama a otra pagina de esta aplicaciíon en views/tiendita 
+	    <a href="/tiendita">Tiendita</a>
+	</p>
+    </div>
+  </div>
+</main>
+</body>
+
+<footer>
+  <%- include('partials/footer'); %>
+</footer>
+
+</html>

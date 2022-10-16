@@ -1,0 +1,7 @@
+Lo que se aha agregado es head header footer a las paginas html y si funciona el hibrido 
+html-ejs.
+
+se agregó la pagina login y registro
+
+Se pretende hacer coneccion con db para agregar usuario y autenticarlo
+y controlar la sesión
